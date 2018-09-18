@@ -37,7 +37,7 @@
             <Border BorderBrush="Black" Margin="7">
                 <!--BorderThickness="2 0 0 0"-->
                 
-                    <WrapPanel DataContext="{Binding XPath=TypeName}">
+                    <WrapPanel>
                         <Button   Grid.Column="1" Background="White" BorderThickness="2" FontWeight="Bold" Padding="4" Margin="0 0 10 0"
                      Content="{Binding Path= FutureComponent[0]}" Click="Button_Click"></Button>
                         <Button   Grid.Column="1" Background="White" BorderThickness="2" FontWeight="Bold" Padding="4" Margin="0 0 10 0"
