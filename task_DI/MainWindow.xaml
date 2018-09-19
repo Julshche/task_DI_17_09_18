@@ -23,7 +23,6 @@
 
         <DataTemplate x:Key="MaxTemplate">
             <Border BorderBrush="Black" Margin="7">
-<<<<<<< HEAD
              
                     <WrapPanel >
                         <Button   Grid.Column="1" Background="White" BorderThickness="2" FontWeight="Bold" Padding="4" Margin="0 20 20 20"
@@ -34,19 +33,6 @@
                             <TextBlock Text="MIN"></TextBlock>
                         <Slider Minimum="-25" Maximum="-5" Width="Auto"></Slider>
                         <TextBlock Text="MAX"></TextBlock>
-=======
-                <!--BorderThickness="2 0 0 0"-->
-                
-                    <WrapPanel>
-                        <Button   Grid.Column="1" Background="White" BorderThickness="2" FontWeight="Bold" Padding="4" Margin="0 0 10 0"
-                     Content="{Binding Path= FutureComponent[0]}" Click="Button_Click"></Button>
-                        <Button   Grid.Column="1" Background="White" BorderThickness="2" FontWeight="Bold" Padding="4" Margin="0 0 10 0"
-                     Content="{Binding Path= FutureComponent[1]}" Click="Button_Click"></Button>
-                        <StackPanel>
-                            <TextBlock Text="{Binding Path= FutureComponent[2]}"></TextBlock>
-                            <Slider Minimum="-25" Maximum="-5"></Slider>
-                            <TextBlock Text="{Binding Path= FutureComponent[3]}"></TextBlock>
->>>>>>> 070d921bc4a0cf5e9c569d7d13c832301eb990ed
                             <Slider Minimum="-25" Maximum="-5"></Slider>
                         </StackPanel>
                     <Button   Grid.Column="1" Background="White" BorderThickness="2" FontWeight="Bold" Padding="4" Margin="20"
