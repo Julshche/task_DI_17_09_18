@@ -13,6 +13,7 @@ namespace task_DI
             {
                 var taskitem = (Task)item;
                 var window = Application.Current.MainWindow;
+                
                 switch(taskitem.TaskName)
                 {
                     case "TASK 3":
@@ -22,7 +23,7 @@ namespace task_DI
                     case "TASK 5":
                         return window.FindResource("MaxTemplate") as DataTemplate;
                     default:
-                        return null;
+                        return window.FindResource("MinTemplate") as DataTemplate;
                 }
         }
 

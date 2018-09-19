@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Windows;
 
 namespace task_DI
 {
@@ -8,21 +9,6 @@ namespace task_DI
 
         public Tasks()
         {
-            //Add(new Task
-            //{
-            //    TaskName = "TASK 3",
-            //    FutureComponent = new string[] { "LOAD", "CLEAR" }
-            //});
-            //Add(new Task
-            //{
-            //    TaskName = "TASK 4",
-            //    FutureComponent = new string[] { "LOAD", "CLEAR" }
-            //});
-            //Add(new Task
-            //{
-            //    TaskName = "TASK 5",
-            //    FutureComponent = new string[] { "LOAD", "CLEAR", "MIN Z", "MAX Z", "START", "STOP" }
-            //});
 
             Add(new Task
             {
@@ -39,6 +25,8 @@ namespace task_DI
                 TaskName = "TASK 5",
                 FutureComponent = new List<string> { "LOAD", "CLEAR", "MIN Z", "MAX Z", "START", "STOP" }
             });
-        }
+            
+    }
+
     }
 }

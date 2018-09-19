@@ -20,55 +20,40 @@
         <Window.Resources>
         <local:Tasks x:Key="dataList"/>
         <local:DTselector x:Key="MyDataTemplateSelector"/>
-        
-        <DataTemplate x:Key="MyTaskTemplate">
 
-            <Border BorderBrush="Black" BorderThickness="0 0 0 2"  HorizontalAlignment="Stretch">
-
-                <TextBlock MinHeight="30" MinWidth=" 100" HorizontalAlignment="Stretch"
-                     Text="{Binding Path=TaskName}"/>
-            </Border>
-           
-            
-
-        </DataTemplate>
-
-        <DataTemplate x:Key="MaxTemplate" >
+        <DataTemplate x:Key="MaxTemplate">
             <Border BorderBrush="Black" Margin="7">
-                <!--BorderThickness="2 0 0 0"-->
-                
-                    <WrapPanel DataContext="{Binding XPath=TypeName}">
-                        <Button   Grid.Column="1" Background="White" BorderThickness="2" FontWeight="Bold" Padding="4" Margin="0 0 10 0"
-                     Content="{Binding Path= FutureComponent[0]}" Click="Button_Click"></Button>
-                        <Button   Grid.Column="1" Background="White" BorderThickness="2" FontWeight="Bold" Padding="4" Margin="0 0 10 0"
-                     Content="{Binding Path= FutureComponent[1]}" Click="Button_Click"></Button>
-                        <StackPanel>
-                            <TextBlock Text="{Binding Path= FutureComponent[2]}"></TextBlock>
-                            <Slider Minimum="-25" Maximum="-5"></Slider>
-                            <TextBlock Text="{Binding Path= FutureComponent[3]}"></TextBlock>
+             
+                    <WrapPanel >
+                        <Button   Grid.Column="1" Background="White" BorderThickness="2" FontWeight="Bold" Padding="4" Margin="0 20 20 20"
+                     Content="LOAD" Click="Button_Click" Width="Auto"></Button>
+                        <Button   Grid.Column="1" Background="White" BorderThickness="2" FontWeight="Bold" Padding="4" Margin="0 20 20 20"
+                     Content="CLEAR" Click="Button_Click"></Button>
+                        <StackPanel Width="100">
+                            <TextBlock Text="MIN"></TextBlock>
+                        <Slider Minimum="-25" Maximum="-5" Width="Auto"></Slider>
+                        <TextBlock Text="MAX"></TextBlock>
                             <Slider Minimum="-25" Maximum="-5"></Slider>
                         </StackPanel>
-                        <Button   Grid.Column="1" Background="White" BorderThickness="2" FontWeight="Bold" Padding="4" Margin="0 0 10 0"
-                     Content="{Binding Path= FutureComponent[4]}" Click="Button_Click"></Button>
-                        <Button   Grid.Column="1" Background="White" BorderThickness="2" FontWeight="Bold" Padding="4" Margin="0 0 10 0"
-                     Content="{Binding Path= FutureComponent[5]}" Click="Button_Click"></Button>
+                    <Button   Grid.Column="1" Background="White" BorderThickness="2" FontWeight="Bold" Padding="4" Margin="20"
+                     Content="START" Click="Button_Click"></Button>
+                    <Button   Grid.Column="1" Background="White" BorderThickness="2" FontWeight="Bold" Padding="4" Margin="20"
+                     Content="STOP" Click="Button_Click"></Button>
 
                     </WrapPanel>
                 
             </Border>
         </DataTemplate>
 
-        <DataTemplate x:Key="MinTemplate" >
+        <DataTemplate x:Key="MinTemplate">
             <Border BorderBrush="Black" Margin="7">
                 <!--BorderThickness="2 0 0 0"-->
 
-                <WrapPanel >
-
-                    <Button  ToolTip="{Binding TaskName}" Grid.Column="1" Background="White" BorderThickness="2" FontWeight="Bold" Padding="4" Margin="0 0 10 0"
-                     Content="{Binding Path= FutureComponent[0]}" Click="Button_Click"></Button>
-                    <Button ToolTip="{Binding TaskName}"  Grid.Column="1" Background="White" BorderThickness="2" FontWeight="Bold" Padding="4" Margin="0 0 10 0"
-                     Content="{Binding Path= FutureComponent[1]}" Click="Button_Click"></Button>
-
+                <WrapPanel Width="Auto">
+                    <Button   Grid.Column="1" Background="White" BorderThickness="2" FontWeight="Bold" Padding="7" Margin="7"
+                     Content="LOAD" Click="Button_Click"></Button>
+                    <Button   Grid.Column="1" Background="White" BorderThickness="2" FontWeight="Bold" Padding="7" Margin="7"
+                     Content="CLEAR" Click="Button_Click"></Button>
                 </WrapPanel>
 
             </Border>
@@ -89,7 +74,6 @@
                     <Setter Property="FontWeight" Value="Bold" />
                 </Trigger>
                 <Trigger Property="IsSelected" Value="true">
-
                     <Setter Property="Background" Value="Yellow" />
                     <Setter Property="FontWeight" Value="Thin" />
                 </Trigger>
@@ -135,19 +119,15 @@
                                                     RenderOptions.EdgeMode="Aliased"
                                                     Data="M0,6 H8 M0,7 H8 M0,6 H8"
                                                     />
-
                     </Button>
                     <Button
-                                            
                                             x:Name="MaximizeButton" 
                                             VerticalAlignment="Top"
                                             Width="35"
                                             Height="33"
                                             BorderBrush="{x:Null}" 
-                                            Background="{x:Null}"
-                                            
+                                            Background="{x:Null}"       
                                             >
-
                         <Path
                                                     x:Name="PART_MaxButton_Path"
                                                     Stroke="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}"
@@ -156,7 +136,6 @@
                                                     RenderOptions.EdgeMode="Aliased"
                                                     Data="M0,0 H10 V10 H0 V0 M0,1 H9 M0,2 H10"
                                                     />
-
                     </Button>
                     <Button
                                             Grid.Column="4"
@@ -166,7 +145,7 @@
                                             Height="34"
                                             BorderBrush="{x:Null}" 
                                             Background="{x:Null}"
-                                            
+                                         
                                             >
 
                         <Path
@@ -175,7 +154,6 @@
                                                     Stretch="None"
                                                     Data="M0,0 L8,8 M0,8 L8,0"
                                                     />
-
                     </Button>
                 </StackPanel>
             </Grid>
@@ -185,14 +163,30 @@
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <!--ItemTemplateSelector="{StaticResource MyDataTemplateSelector}"-->
-                <ItemsControl>
-                    <ListBox 
+               
+                    <!--<ListBox x:Name="MyList"
                ItemContainerStyle="{StaticResource IContainerStyle}"
                ItemTemplate="{StaticResource MyTaskTemplate}"
               ItemsSource="{Binding Source={StaticResource dataList}}" 
                          IsSynchronizedWithCurrentItem="True"
-                        BorderBrush="{x:Null}" />
-                </ItemsControl>
+                        BorderBrush="{x:Null}" />-->
+
+
+                <ListBox ItemsSource="{Binding Source={StaticResource dataList}}"  
+                         ItemContainerStyle="{StaticResource IContainerStyle}"
+                         SelectionChanged="MyListItemSelected">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>  
+                                
+                                <Border BorderBrush="Black" BorderThickness="0 0 0 2"  HorizontalAlignment="Stretch">
+                                    <TextBlock Text="{Binding Path=TaskName}" Margin="0 7" Width="90" HorizontalAlignment="Left"/>
+                                </Border>
+                            </StackPanel>
+                        
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ListBox>
 
                 <Grid Grid.Column="1">
 
@@ -204,29 +198,29 @@
 
                     <Grid >
                         <Border BorderBrush="Black" BorderThickness="2 0 0 2">
-                            <!--<h:HelixViewport3D Name="model">
-                                <h:DefaultLights/>
-                                <h:CoordinateSystemVisual3D/>
-                                --><!--Teapot/>--><!--
-                            </h:HelixViewport3D>-->
+
                             <HelixToolkit:HelixViewport3D x:Name="helix_view" ZoomExtentsWhenLoaded="True" >
                                
                                 <HelixToolkit:DefaultLights/>
-                                <ModelVisual3D x:Name="MyView" Content="{Binding Model}"/><!--Binding="{}"-->
+                                <ModelVisual3D x:Name="MyView" Content="{Binding Model}"/>
+                                
+                                <!--Binding="{}"-->
                             </HelixToolkit:HelixViewport3D>
 
                         </Border>
                     </Grid>
                     <Grid Grid.Row="1" >
 
-                        <Border BorderThickness="2 0 0 0" BorderBrush="Black">
+                        <ListView Name="panel" ItemsSource="{Binding Path=TaskName}">
+                            <Border BorderThickness="2 0 0 0" BorderBrush="Black">
+                              
+                            <!--<ItemsControl ItemsSource="{Binding Source={StaticResource dataList}}"
+                     ItemTemplateSelector="{StaticResource MyDataTemplateSelector}" />-->
                             
-                            <ItemsControl ItemsSource="{Binding Source={StaticResource dataList}}"
-                     ItemTemplateSelector="{StaticResource MyDataTemplateSelector}" />
-                            <!--<ContentControl Content="{DynamicResource dataList}" 
-                                            ContentTemplateSelector="{DynamicResource MyDataTemplateSelector}"></ContentControl>-->
+                            <!--<ContentControl Content="{StaticResource dataList}"
+                                       ContentTemplateSelector="{StaticResource MyDataTemplateSelector}"></ContentControl>-->
                         </Border>
-                        <!--ContentTemplate="{StaticResource MinTemplate}"-->
+                      </ListView>
                     </Grid>
                 </Grid>
             </Grid>

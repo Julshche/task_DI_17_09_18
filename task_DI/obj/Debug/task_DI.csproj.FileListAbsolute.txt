@@ -61,3 +61,24 @@ C:\Users\YuShc\Documents\task_DI_15_09 - Copy\task_DI_15_09 - Copy\task_DI\obj\D
 C:\Users\YuShc\Documents\task_DI_15_09 - Copy\task_DI_15_09 - Copy\task_DI\obj\Debug\task_DI.csproj.GenerateResource.Cache
 C:\Users\YuShc\Documents\task_DI_15_09 - Copy\task_DI_15_09 - Copy\task_DI\obj\Debug\task_DI.exe
 C:\Users\YuShc\Documents\task_DI_15_09 - Copy\task_DI_15_09 - Copy\task_DI\obj\Debug\task_DI.pdb
+C:\Users\YuShc\Documents\task_DI_15_09 - Copy\task_DI_17_09_18\task_DI\obj\Debug\task_DI.csprojResolveAssemblyReference.cache
+C:\Users\YuShc\Documents\task_DI_15_09 - Copy\task_DI_17_09_18\task_DI\obj\Debug\MainWindow.g.cs
+C:\Users\YuShc\Documents\task_DI_15_09 - Copy\task_DI_17_09_18\task_DI\obj\Debug\App.g.cs
+C:\Users\YuShc\Documents\task_DI_15_09 - Copy\task_DI_17_09_18\task_DI\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\YuShc\Documents\task_DI_15_09 - Copy\task_DI_17_09_18\task_DI\obj\Debug\task_DI_MarkupCompile.cache
+C:\Users\YuShc\Documents\task_DI_15_09 - Copy\task_DI_17_09_18\task_DI\obj\Debug\task_DI_MarkupCompile.lref
+C:\Users\YuShc\Documents\task_DI_15_09 - Copy\task_DI_17_09_18\task_DI\obj\Debug\task_DI.exe
+C:\Users\YuShc\Documents\task_DI_15_09 - Copy\task_DI_17_09_18\task_DI\obj\Debug\task_DI.pdb
+C:\Users\YuShc\Documents\task_DI_15_09 - Copy\task_DI_17_09_18\task_DI\bin\Debug\task_DI.exe.config
+C:\Users\YuShc\Documents\task_DI_15_09 - Copy\task_DI_17_09_18\task_DI\bin\Debug\task_DI.exe
+C:\Users\YuShc\Documents\task_DI_15_09 - Copy\task_DI_17_09_18\task_DI\bin\Debug\task_DI.pdb
+C:\Users\YuShc\Documents\task_DI_15_09 - Copy\task_DI_17_09_18\task_DI\bin\Debug\HelixToolkit.dll
+C:\Users\YuShc\Documents\task_DI_15_09 - Copy\task_DI_17_09_18\task_DI\bin\Debug\HelixToolkit.Wpf.dll
+C:\Users\YuShc\Documents\task_DI_15_09 - Copy\task_DI_17_09_18\task_DI\bin\Debug\HelixToolkit.pdb
+C:\Users\YuShc\Documents\task_DI_15_09 - Copy\task_DI_17_09_18\task_DI\bin\Debug\HelixToolkit.xml
+C:\Users\YuShc\Documents\task_DI_15_09 - Copy\task_DI_17_09_18\task_DI\bin\Debug\HelixToolkit.Wpf.pdb
+C:\Users\YuShc\Documents\task_DI_15_09 - Copy\task_DI_17_09_18\task_DI\bin\Debug\HelixToolkit.Wpf.xml
+C:\Users\YuShc\Documents\task_DI_15_09 - Copy\task_DI_17_09_18\task_DI\obj\Debug\MainWindow.baml
+C:\Users\YuShc\Documents\task_DI_15_09 - Copy\task_DI_17_09_18\task_DI\obj\Debug\task_DI.g.resources
+C:\Users\YuShc\Documents\task_DI_15_09 - Copy\task_DI_17_09_18\task_DI\obj\Debug\task_DI.Properties.Resources.resources
+C:\Users\YuShc\Documents\task_DI_15_09 - Copy\task_DI_17_09_18\task_DI\obj\Debug\task_DI.csproj.GenerateResource.Cache

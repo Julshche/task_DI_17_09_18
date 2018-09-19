@@ -76,6 +76,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DTselector.cs" />
+    <Compile Include="meshobj.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Task.cs" />
     <Compile Include="tasks.cs" />
